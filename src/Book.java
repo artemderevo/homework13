@@ -29,4 +29,6 @@ public class Book {
           return Objects.equals(author, book.author) && Objects.equals(nameOfBook, book.nameOfBook) && publicationYear == book.publicationYear;
      }
 
+     public int hashcode() {return Objects.hash(nameOfBook, publicationYear, author);}
+
 }
