@@ -14,11 +14,11 @@ public class Author {
     public String getSurnameAuthor() {return this.surnameOfAuthor;}
     public void setNameOfAuthor(String nameOfAuthor) {this.nameOfAuthor = nameOfAuthor;}
     public void setSurnameOfAuthor() {this.surnameOfAuthor = surnameOfAuthor;}
-
+    @Override
     public String toString() {
         return  nameOfAuthor + " " + surnameOfAuthor;
     }
-
+    @Override
     public boolean equals(Object o) {
         if (this == o ) return true;
         if (o == null || getClass() != o.getClass()) return false;

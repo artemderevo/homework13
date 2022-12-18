@@ -19,9 +19,14 @@ public class Book {
      public int getAge() {return this.publicationYear;}
      public void setPublicationYear(int age) {this.publicationYear = age;}
 
+     public Author getAuthor() {
+          return author;
+     }
+     @Override
      public String toString() {
           return "Author: " + author + ", Book: " + nameOfBook + ", Year Publication: " + publicationYear;
      }
+     @Override
      public boolean equals(Object o) {
           if (this == o) return true;
           if (o == null || getClass() != o.getClass()) return false;
